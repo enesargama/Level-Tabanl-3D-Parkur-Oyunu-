@@ -1,3 +1,4 @@
+[KURULUM_NOTLARI.txt](https://github.com/user-attachments/files/26632130/KURULUM_NOTLARI.txt)
 # Level-Tabanl-3D-Parkur-Oyunu-
 Unity ile geliştirilmiştir 3D Masaüstü sürümler için geçerlidir
 [README.md](https://github.com/user-attachments/files/26632035/README.md)
@@ -35,7 +36,29 @@ Assets/
     └── World/
         ├── RotateController.cs
         └── SpawnEnemy.cs
-```
+```PARKUR OYUNU KURULUM NOTLARI
+
+1. Assets/Scripts klasorlerini Unity projenin icine kopyala.
+2. Player objesine su scriptleri ekle:
+   - PlayerScript
+   - HealthController
+3. Camera objesine CameraController ekle ve target olarak Player'i bagla.
+4. RetryManager ve LevelCompleteManager scriptlerini bos GameObject'lere ekle.
+5. RetryPanel ve LevelCompletePanel objelerini sahnede olustur ve ilgili managerlara bagla.
+6. Finish objesine Box Collider ekle, Is Trigger acik olsun, FinishTrigger scriptini ekle.
+7. Coin objelerine CoinManager ekle.
+8. Engel objelerine EngelManager ekle.
+9. Donen engellere RotateController ekle.
+10. Spawn sistemi kullanacaksan SpawnEnemy scriptini bos bir objeye ekle.
+
+ONEMLI:
+- Player tag: Player
+- Zemin tag: Zemin
+- Main menu sahnesinin adi: MainMenu
+
+NOT:
+Bu paket sadece script, README ve gitignore dosyalarini icerir. Unity sahneleri, prefablar ve UI objeleri Unity editorunde kurulmalidir.
+
 
 ## Unity Kurulum Notları
 - Player objesine `Player` tag'i ver.
